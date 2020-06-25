@@ -1,0 +1,42 @@
+.novedades{
+    background: linear-gradient(225deg, $color-primary 0%, #0000A3 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12%;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+        background: white;
+        bottom: 100%;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        transform-origin: 100% 100%;
+        transform: rotate(-6deg);
+        width: 150%;
+    }
+
+    .novedades__title{
+        color: white;        
+        font-weight: normal;
+        font-size: 2.25rem;
+        text-align: center;
+    }
+
+    .novedades__button{
+        width: 100%;
+        @extend %button-normal;
+        &:hover{
+            @extend %button-hover;
+        }
+
+        &:focus{
+            @extend %button-focus;
+        }
+    }
+}

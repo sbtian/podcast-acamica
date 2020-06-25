@@ -1,0 +1,61 @@
+.entrevistas{
+    display: flex;
+    flex-direction: column;    
+
+    .entrevistas__venimos{
+        display: flex; 
+        flex-direction: column;       
+        padding: 0 5%;
+
+        .entrevistas__image{
+            height: auto;
+            margin-top: -30%;
+            z-index: 1000;            
+            max-width: 100%;
+        }
+    
+        .entrevistas__text{
+            display: flex;
+            flex-direction: column;
+            padding: 0;            
+    
+            .entrevistas__text--title{                
+                font-size: 2.25rem;
+                color: $color-text;
+            }
+    
+            .entrevistas__text--description{
+                font-family: $font-family-mono;
+                color: $color-text;
+                padding: 5% 0;                
+            }
+        }
+    }
+
+    .entrevistas__invitadas{
+
+        .entrevistas__invitadas--title{            
+            color: $color-text;
+            font-weight: normal;
+            margin: 5% 0;
+            padding: 0 5%;
+            font-size: 2.25rem;
+        }
+
+        .invitadas__items{
+            display: grid;            
+            padding: 0;
+            grid-template-columns: repeat(1, 1fr);
+
+            .invitadas__item{
+
+                .invitadas__item--image{
+                    object-fit: cover;
+                    width: 100%;
+                    max-height: 100%;
+                }
+            }
+        }
+    }
+    
+}

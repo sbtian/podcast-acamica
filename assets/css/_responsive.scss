@@ -1,0 +1,175 @@
+@media only screen and (min-width: 980px){
+    .header{
+        // padding: 1rem;
+        padding: 0;
+
+        
+        .header__nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 6rem;
+            padding: 0.5rem;  
+    
+            .header__nav--items{
+                display: flex; 
+                list-style: none;
+                
+                .header__nav--item{
+                    padding: 0 1rem; 
+                }
+            }
+        }
+
+        .header__nav--mobile{
+            display: none;
+        }
+
+        .header__title{
+            margin: 6rem 19rem 0 11rem;
+
+            .header__title--text{
+                font-size: 4rem;
+            }
+
+            .header__title--description{
+                margin-right: 40%;
+            }
+
+            .header__title--button{
+                margin: 10px 0 0;
+                width: 250px;
+            }
+        }
+    }
+
+    .episodios{
+        padding: 0 5%;
+        height: 1150px;
+
+        .episodios__title{
+            font-size: 3rem;
+            margin: 13% 11rem 0;
+        }
+        .episodios__podcast{
+            grid-template-columns: repeat(2, 1fr);
+            margin: 0 5%;
+
+            .episodios__podcast--item{
+                padding: 5%;
+            }
+        }        
+    }
+
+    .entrevistas{
+        
+        .entrevistas__venimos{
+            padding: 0 11%;
+            flex-direction: row;          
+
+            .entrevistas__image{
+                margin-top: -15%;
+                height: auto;
+            }
+
+            .entrevistas__text{
+                padding-left: 5%;
+
+                .entrevistas__text--title{
+                    font-size: 3rem;
+                }
+
+                .entrevistas__text--description{
+                    padding-top: 5%;
+                    padding-right: 40%;
+                }
+            }
+        }
+
+        .entrevistas__invitadas{
+
+            .entrevistas__invitadas--title{
+                font-size: 3rem;
+                margin: 0 11rem 5%;
+            }
+
+            .invitadas__items{
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+
+    .topicos{
+        .topicos__title{
+            font-size: 3rem;
+            margin: 5% 11rem 6%;
+        }
+
+        .topicos__items{
+            flex-direction: row;
+        }
+    }
+
+    .novedades{
+        .novedades__title{
+            font-size: 3rem;
+        }
+
+        .novedades__button{
+            width: 30%;
+        }
+    }
+
+    .footer{
+        padding: 3% 5%;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        
+        .footer__brands{
+            padding: 0;
+
+            span{
+                padding: 0 10px;
+            }
+
+            .footer__brand--telegram{
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 720px){
+    .episodios{
+        height: 1350px;
+    }
+    .entrevistas{
+        .entrevistas__venimos{
+            .entrevistas__image{
+                margin-top: -25%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 720px) and (max-width: 980px){
+    .episodios{
+        height: 1550px;
+    }
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1280px){
+    
+    .episodios{
+        height: 1000px;
+    }
+
+    .entrevistas{
+        .entrevistas__venimos{
+            .entrevistas__image{
+                margin-top: -20%;
+            }
+        }
+    }
+}

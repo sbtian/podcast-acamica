@@ -1,0 +1,33 @@
+.topicos{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+
+    .topicos__title{        
+        color: $color-text;
+        font-weight: normal;
+        margin: 10% 0;
+        font-size: 2.25rem;
+    }
+
+    .topicos__items{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 15%;
+
+        .topicos__item{
+            display: flex;
+            flex-direction: column;
+            padding: 10% 0;
+
+            .topicos__item--title{
+                margin: 5%;
+                font-size: 1.5rem;
+                text-align: center;
+                font-weight: 700;
+            }
+        }
+    }
+}

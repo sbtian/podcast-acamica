@@ -1,0 +1,49 @@
+.episodios{
+    background: linear-gradient(225deg, $color-primary 0%, #0000A3 100%);
+    padding: 0 5%;
+    height: 1250px;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+        background: white;
+        bottom: 100%;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        transform-origin: 100% 100%;
+        transform: rotate(-6deg);
+        width: 150%;
+    }
+    &::after {
+        background: white;
+        top: 100%;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        transform-origin: 0% 0%;
+        transform: rotate(-6deg);
+        width: 150%;
+    }
+    .episodios__title{ 
+        color: white;
+        font-weight: normal;
+        margin: 15% 0 0;
+        font-size: 2.25rem;
+    }
+
+    .episodios__podcast{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+        
+
+        .episodios__podcast--item{            
+            padding: 2% 0;
+        }
+    }
+}
