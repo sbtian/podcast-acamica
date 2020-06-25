@@ -82,9 +82,9 @@ body {
 }
 
 .header .header__nav--mobile .header__mobile .header__mobile--menu {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  margin: 0 0 0 -85%;
+  margin: 0 0 0 -88%;
   padding: 30px;
   background: #0000EC;
   list-style-type: none;
@@ -441,6 +441,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 8%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer .footer__copyright {
