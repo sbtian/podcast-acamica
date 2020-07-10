@@ -1,6 +1,6 @@
-.header{
-    // height: 360px;
+.header{    
     padding: 0 5%;
+    margin: 0;
     display: flex;
     flex-direction: column;    
     height: auto;
@@ -26,16 +26,27 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-top: 15px;
+        position: sticky;
+        top: 0;
+        background: #fff;
     
         .header__mobile{
             z-index: 1;
             user-select: none;
+            display: block;
+            position: relative;
     
             .header__mobile--menu{                
                 position: fixed;
+                z-index: 1000;
                 width: 100%;
-                margin: 0 0 0 -88%;
-                padding: 30px;  
+                // width: 300px;
+                margin: 0 0 0 -90%;
+                // margin: -100px 0 0 -50px;
+                // padding: 30px; 
+                padding: 50px;
+                padding-top: 125px; 
                 background: $color-primary;
                 list-style-type: none;
                 -webkit-font-smoothing: antialiased;
@@ -61,9 +72,12 @@
             }    
     
             input{
+                display: block;
                 width: 40px;
-                position: relative;
-                top: 17px;  
+                height: 32px;
+                position: absolute;
+                top: -12px;
+                left: -9px;
                 cursor: pointer;  
                 opacity: 0; /* hide this */
                 z-index: 2; /* and place it over the hamburger */  
@@ -86,7 +100,6 @@
         
                 &:checked ~ ul{
                     transform: none;
-                    // display: block;
                 }
             }
         
@@ -123,6 +136,7 @@
 
         .header__title--text{
             font-size: 2.25rem;
+            font-weight: 400;
             .title__text--last{
                 color: $color-primary;
             }

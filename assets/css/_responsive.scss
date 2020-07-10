@@ -49,11 +49,11 @@
 
         .episodios__title{
             font-size: 3rem;
-            margin: 13% 11rem 0;
+            margin: 13% 6% 0;
         }
         .episodios__podcast{
             grid-template-columns: repeat(2, 1fr);
-            margin: 0 5%;
+            margin: 0;
 
             .episodios__podcast--item{
                 padding: 5%;
@@ -90,7 +90,7 @@
 
             .entrevistas__invitadas--title{
                 font-size: 3rem;
-                margin: 0 11rem 5%;
+                margin: 0 6% 5%;
             }
 
             .invitadas__items{
@@ -102,7 +102,7 @@
     .topicos{
         .topicos__title{
             font-size: 3rem;
-            margin: 5% 11rem 6%;
+            margin: 5% 6% 6%;
         }
 
         .topicos__items{

@@ -20,14 +20,14 @@
             </ul>
         </nav>
 
-        <nav role="navigation" class="header__nav--mobile">
+        <nav class="header__nav--mobile">
             <img src="assets/images/logo.svg" alt="logo">
-            <div id="menuToggle" class="header__mobile">
+            <div class="header__mobile">
               <input type="checkbox" />
               <span></span>
               <span></span>
               <span></span>
-              <ul id="menu" class="header__mobile--menu">
+              <ul class="header__mobile--menu">
                 <li class="header__mobile--item"><a href="#episodios">EPISODIOS</a></li>
                 <li class="header__mobile--item"><a href="#nosotros">NOSOTROS</a></li>
                 <li class="header__mobile--item"><a href="#entrevistas">ENTREVISTAS</a></li>
@@ -36,75 +36,77 @@
             </div>
           </nav>
         <section class="header__title">
-            <span class="header__title--text">Hello <s>world</s> pale blue dot<span class="title__text--last">.</span></span>
+            <h1 class="header__title--text">Hello <s>world</s> pale blue dot<span class="title__text--last">.</span></h1>
             <span class="header__title--description">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</span>
-            <button class="header__title--button">CONOCÉ MÁS</button>
+            <button class="header__title--button" onclick="window.location.href='#nosotros'">CONOCÉ MÁS</button>
         </section>
     </header>
-    <section class="episodios" id="episodios">
-        <h2 class="episodios__title">Episodios</h2>
-        <section class="episodios__podcast">
-            <div class="episodios__podcast--item"><iframe src="https://open.spotify.com/embed-podcast/show/37sCdRG1dl6GJrKzRzG9Kn" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
-            <div class="episodios__podcast--item"><iframe src="https://open.spotify.com/embed-podcast/episode/2nMzAkF42qagQGYwvmUZ7R" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
-            <div class="episodios__podcast--item"><iframe src="https://open.spotify.com/embed-podcast/show/66phcUoQsM3URyzhFDz9ig" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
-            <div class="episodios__podcast--item"><iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+    <main>
+        <section class="episodios" id="episodios">
+            <h2 class="episodios__title">Episodios</h2>
+            <section class="episodios__podcast">
+                <div class="episodios__podcast--item"><iframe src="https://open.spotify.com/embed-podcast/show/37sCdRG1dl6GJrKzRzG9Kn"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+                <div class="episodios__podcast--item"><iframe src="https://open.spotify.com/embed-podcast/episode/2nMzAkF42qagQGYwvmUZ7R"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+                <div class="episodios__podcast--item"><iframe src="https://open.spotify.com/embed-podcast/show/66phcUoQsM3URyzhFDz9ig"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+                <div class="episodios__podcast--item"><iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+            </section>
         </section>
-    </section>
-    <section class="entrevistas" id="nosotros">        
-        <h2 style="display: none;">Entrevistas</h2>
-        <div class="entrevistas__venimos">
-            <img src="assets/images/phone.png" class="entrevistas__image" alt="celular">
-            <div class="entrevistas__text">
-                <span class="entrevistas__text--title">De dónde venimos</span>
-                <span class="entrevistas__text--description">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. 
-                    <br> Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</span>
+        <section class="entrevistas" id="nosotros">        
+            <h2 style="display: none;">Entrevistas</h2>
+            <div class="entrevistas__venimos">
+                <img src="assets/images/phone.png" class="entrevistas__image" alt="celular">
+                <div class="entrevistas__text">
+                    <span class="entrevistas__text--title">De dónde venimos</span>
+                    <span class="entrevistas__text--description">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. 
+                        <br> Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</span>
+                </div>
             </div>
-        </div>
-        <section class="entrevistas__invitadas" id="entrevistas">
-            <h2 class="entrevistas__invitadas--title">Invitadas/os estelares</h2>
-            <div class="invitadas__items">
-                <div class="invitadas__item"><img src="assets/images/grace-hopper.png" alt="grace hopper" class="invitadas__item--image"></div>
-                <div class="invitadas__item"><img src="assets/images/Katie-Bouman.png" alt="Katie Bouman" class="invitadas__item--image"></div>
-                <div class="invitadas__item"><img src="assets/images/Margaret_Hamilton.png" alt="Margaret Hamilton" class="invitadas__item--image"></div>
-                <div class="invitadas__item"><img src="assets/images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="Univac 1103" class="invitadas__item--image"></div>
-                <div class="invitadas__item"><img src="assets/images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Computer operators with an Eniac" class="invitadas__item--image"></div>
-                <div class="invitadas__item"><img src="assets/images/susan-kare.png" alt="susan kare" class="invitadas__item--image"></div>
+            <section class="entrevistas__invitadas" id="entrevistas">
+                <h2 class="entrevistas__invitadas--title">Invitadas/os estelares</h2>
+                <div class="invitadas__items">
+                    <div class="invitadas__item"><img src="assets/images/grace-hopper.png" alt="grace hopper" class="invitadas__item--image"></div>
+                    <div class="invitadas__item"><img src="assets/images/Katie-Bouman.png" alt="Katie Bouman" class="invitadas__item--image"></div>
+                    <div class="invitadas__item"><img src="assets/images/Margaret_Hamilton.png" alt="Margaret Hamilton" class="invitadas__item--image"></div>
+                    <div class="invitadas__item"><img src="assets/images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="Univac 1103" class="invitadas__item--image"></div>
+                    <div class="invitadas__item"><img src="assets/images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Computer operators with an Eniac" class="invitadas__item--image"></div>
+                    <div class="invitadas__item"><img src="assets/images/susan-kare.png" alt="susan kare" class="invitadas__item--image"></div>
+                </div>
+            </section>
+        </section>
+        <section class="topicos" id="topicos">
+            <h2 class="topicos__title">Algunos de nuestros temas</h2>
+            <div class="topicos__items">
+                <div class="topicos__item">
+                    <img src="assets/images/icon1.svg" alt="" class="topicos__item--image">
+                    <span class="topicos__item--title">Trabajo remoto</span>
+                </div>
+                <div class="topicos__item">
+                    <img src="assets/images/icon2.svg" alt="" class="topicos__item--image">
+                    <span class="topicos__item--title">Repensando la programación</span>
+                </div>
+                <div class="topicos__item">
+                    <img src="assets/images/icon3.svg" alt="" class="topicos__item--image">
+                    <span class="topicos__item--title">Bases del código</span>
+                </div>
+                <div class="topicos__item">
+                    <img src="assets/images/icon4.svg" alt="" class="topicos__item--image">
+                    <span class="topicos__item--title">Seguridad informática</span>
+                </div>
             </div>
         </section>
-    </section>
-    <section class="topicos" id="topicos">
-        <h2 class="topicos__title">Algunos de nuestros temas</h2>
-        <div class="topicos__items">
-            <div class="topicos__item">
-                <img src="assets/images/icon1.svg" alt="" class="topicos__item--image">
-                <span class="topicos__item--title">Trabajo remoto</span>
-            </div>
-            <div class="topicos__item">
-                <img src="assets/images/icon2.svg" alt="" class="topicos__item--image">
-                <span class="topicos__item--title">Repensando la programación</span>
-            </div>
-            <div class="topicos__item">
-                <img src="assets/images/icon3.svg" alt="" class="topicos__item--image">
-                <span class="topicos__item--title">Bases del código</span>
-            </div>
-            <div class="topicos__item">
-                <img src="assets/images/icon4.svg" alt="" class="topicos__item--image">
-                <span class="topicos__item--title">Seguridad informática</span>
-            </div>
-        </div>
-    </section>
-    <section class="novedades">
-        <h2 class="novedades__title">¿Querés las últimas novedades?</h2>
-        <button class="novedades__button">ESCUCHÁ LOS EPISODIOS</button>
-    </section>
+        <section class="novedades">
+            <h2 class="novedades__title">¿Querés las últimas novedades?</h2>
+            <button class="novedades__button" onclick="window.location.href='#episodios'">ESCUCHÁ LOS EPISODIOS</button>
+        </section>
+    </main>
     <footer class="footer">
         <span class="footer__copyright">© 2020— Hello blue pale dot</span>
         <div class="footer__brands">
-            <span><i class="fab fa-spotify"></i></span>
-            <span><i class="fab fa-instagram"></i></span>
-            <span><i class="fab fa-twitter"></i></span>
-            <span><i class="fab fa-facebook"></i></span>
-            <span class="footer__brand--telegram"><i class="fab fa-telegram"></i></span>
+            <a href="https://spotify.com" target="_blank"><span><i class="fab fa-spotify"></i></span></a>
+            <a href="https://instagram.com" target="_blank"><span><i class="fab fa-instagram"></i></span></a>
+            <a href="https://twitter.com" target="_blank"><span><i class="fab fa-twitter"></i></span></a>
+            <a href="https://facebook.com" target="_blank"><span><i class="fab fa-facebook"></i></span></a>
+            <a href="https://web.telegram.org/" target="_blank"><span><i class="fab fa-telegram"></i></span></a>
         </div>
     </footer>
 </body>

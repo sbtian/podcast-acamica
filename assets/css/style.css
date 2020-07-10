@@ -33,6 +33,7 @@ body {
   border: none;
   height: 3.5rem;
   width: 30%;
+  cursor: pointer;
 }
 
 .header .header__title .header__title--button:hover, .novedades .novedades__button:hover {
@@ -47,6 +48,7 @@ body {
 
 .header {
   padding: 0 5%;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,6 +73,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 15px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #fff;
 }
 
 .header .header__nav--mobile .header__mobile {
@@ -79,13 +86,17 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  display: block;
+  position: relative;
 }
 
 .header .header__nav--mobile .header__mobile .header__mobile--menu {
   position: fixed;
+  z-index: 1000;
   width: 100%;
-  margin: 0 0 0 -88%;
-  padding: 30px;
+  margin: 0 0 0 -90%;
+  padding: 50px;
+  padding-top: 125px;
   background: #0000EC;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -110,9 +121,12 @@ body {
 }
 
 .header .header__nav--mobile .header__mobile input {
+  display: block;
   width: 40px;
-  position: relative;
-  top: 17px;
+  height: 32px;
+  position: absolute;
+  top: -12px;
+  left: -9px;
   cursor: pointer;
   opacity: 0;
   /* hide this */
@@ -185,6 +199,7 @@ body {
 
 .header .header__title .header__title--text {
   font-size: 2.25rem;
+  font-weight: 400;
 }
 
 .header .header__title .header__title--text .title__text--last {
@@ -258,6 +273,11 @@ body {
   padding: 2% 0;
 }
 
+.episodios .episodios__podcast .episodios__podcast--item iframe {
+  width: 100%;
+  height: 232px;
+}
+
 .entrevistas {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -322,6 +342,11 @@ body {
   padding: 0;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
+}
+
+.entrevistas .entrevistas__invitadas .invitadas__items .invitadas__item {
+  display: -ms-grid;
+  display: grid;
 }
 
 .entrevistas .entrevistas__invitadas .invitadas__items .invitadas__item .invitadas__item--image {
@@ -455,7 +480,11 @@ body {
   padding: 5% 0 0;
 }
 
-.footer .footer__brands span {
+.footer .footer__brands a {
+  color: #060A24;
+}
+
+.footer .footer__brands a span {
   padding: 0 15px;
   font-size: 1.125rem;
 }
@@ -512,12 +541,12 @@ body {
   }
   .episodios .episodios__title {
     font-size: 3rem;
-    margin: 13% 11rem 0;
+    margin: 13% 6% 0;
   }
   .episodios .episodios__podcast {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    margin: 0 5%;
+    margin: 0;
   }
   .episodios .episodios__podcast .episodios__podcast--item {
     padding: 5%;
@@ -545,7 +574,7 @@ body {
   }
   .entrevistas .entrevistas__invitadas .entrevistas__invitadas--title {
     font-size: 3rem;
-    margin: 0 11rem 5%;
+    margin: 0 6% 5%;
   }
   .entrevistas .entrevistas__invitadas .invitadas__items {
     -ms-grid-columns: (1fr)[3];
@@ -553,7 +582,7 @@ body {
   }
   .topicos .topicos__title {
     font-size: 3rem;
-    margin: 5% 11rem 6%;
+    margin: 5% 6% 6%;
   }
   .topicos .topicos__items {
     -webkit-box-orient: horizontal;
